@@ -5,3 +5,11 @@
     { "path": "./tsconfig.node.json" }
   ]
 }
+
+{  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "jsx": "react-jsx"
+  }
+}
