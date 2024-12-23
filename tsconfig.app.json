@@ -8,7 +8,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node", // "node" is more widely used than "bundler" for compatibility
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -20,7 +20,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Compatibility */
+    "esModuleInterop": true,
+    "resolveJsonModule": true, // Enables importing JSON files
+    "allowSyntheticDefaultImports": true // Allows default imports from modules without default exports
   },
   "include": ["src"]
 }

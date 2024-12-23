@@ -1,15 +1,18 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
-}
-
-{  "compilerOptions": {
+  "compilerOptions": {
     "strict": true,
+    "allowImportingTsExtensions": true,
     "moduleResolution": "node",
     "target": "ESNext",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["jest", "node"],
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"],
+      "assets/*": ["src/assets/*"]
+    }
   }
 }
